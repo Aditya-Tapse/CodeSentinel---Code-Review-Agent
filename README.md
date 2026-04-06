@@ -128,4 +128,3 @@ python main.py models
 # Show current configuration
 python main.py config-show
 ```
-t
