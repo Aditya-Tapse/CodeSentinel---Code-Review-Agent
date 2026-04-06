@@ -32,7 +32,7 @@ codesentinel/
 ├── reporter.py          # Markdown report + terminal output
 ├── config.py            # Environment/backend configuration
 ├── requirements.txt
-├── .env.example
+├── .env
 └── sample_buggy.py      # Test file with intentional bugs
 ```
 
@@ -86,29 +86,9 @@ curl http://localhost:11434/api/tags
 
 ### 5. Configure environment
 
-```bash
-cp .env.example .env
-```
-
 Edit `.env`:
 
-```env
-# LLM Backend: "ollama" | "claude" | "openai"
-LLM_BACKEND=ollama
-OLLAMA_MODEL=codellama:13b
-OLLAMA_BASE_URL=http://localhost:11434
-
-# Optional cloud APIs
-ANTHROPIC_API_KEY=
-OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o
-
-# Required for --pr mode
-GITHUB_TOKEN=your_github_token_here
-
-# Chunking
-MAX_CHUNK_LINES=150
-```
+Add your github token inside the .env file.
 
 ---
 
